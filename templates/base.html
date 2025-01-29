@@ -9,80 +9,31 @@
     <title>{% block title %}E - S H O P{% endblock title %}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo.jpg' %}">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png' %}">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- google fonts -->
-    <!-- CSS only -->
-    
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo.jpg' %}">
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-    <!-- all css here -->
-    <!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <!-- animate css -->
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <!-- pe-icon-7-stroke -->
-    <link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}">
-    <!-- pe-icon-7-stroke -->
     <link rel="stylesheet" href="{% static 'css/jquery.simpleLens.css' %}">
-    <!-- jquery-ui.min css -->
-    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
-    <!-- meanmenu css -->
-    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
-    <!-- nivo.slider css -->
-    <link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
-    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}"> <!-- ?? -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}"> <!-- ?? -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- responsive css -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <!-- modernizr js -->
-
-
-    
-    <style> 
-        #searchh input[type=text] {
-        width: 150px;
-        margin-top:10px;
-        margin-bottom:10px;
-        box-sizing: border-box;
-        border: 2px solid #f4cca4;
-        border-radius: 4px;
-        font-size: 16px;
-        color:#1c1427;
-        background-color: #fff;
-        background-position: 10px 10px; 
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-        }
-
-        #searchh input[type=text]:focus {
-        width: 80%;
-        }
-    </style>
-
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
-
-    <script src="https://www.paypal.com/sdk/js?client-id=ATDakGEFESlSq0xbOzxw0W-dZUWrKfiedaKAFHEk0QKfsUeeR_9j6G1A78TUmvFJuMvz3ArZroEobPHY&currency=USD"></script>
-    
 </head>
 
 <body style="background:#40394a">
-
-    <!-- header section start -->
-    <header style="background:#1c1427" class="header-one header-two">
+    <header style="background:#1c1427" class="header-two">
         <div style="background:#1c1427" class="header-top-two">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-12">
                         <div class="middel-top">
                             {% if user.id is None %}
                             <div class="left floatleft">
@@ -120,14 +71,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <!--
-                            <div class="right floatright">
-                               
-                                     <form action="" method="GET" >
-                                    <button style="color:#d99879" type="submit"><i class="mdi mdi-magnify"></i></button>
-                                    <input type="text" placeholder="Search..." name="keyword"/>
-                                    </form>
-                            -->
                             </div>
                         </div>
                     </div>
@@ -137,7 +80,7 @@
         <div style="background:#40394a">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-12">
                         <form id="searchh" action= method="GET">
                         <input  type="text" name="keyword" placeholder="Search...">
                         <button style="height:49px; margin-bottom:6px; background:#f4cca4;margin-left:-1px;border:None "  class="btn btn-warning" type="submit">
@@ -150,13 +93,13 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-2">
                     <div class="logo">
                         <a style="color:#f4cca4;font-weight: 800;" href="\"><span
                                 style="color:#d99879">E-</span>shop</a>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <div class="header-middel">
                         <div class="mainmenu">
                             <nav >
@@ -201,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-2">
                     <div class="cart-itmes">
                         <a class="cart-itme-a" href="">
 
@@ -244,55 +187,38 @@
         </div>
     </header>
     <br>
-    <!--===================== Content ====================-->
-    {% block content %}
 
-    {% endblock content %}
-
+    {% block content %}{% endblock content %}
 
     <footer>
         <div  style="background:#3f3350" class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-12 col-6">
                         <p style="color:#d99879">Created By <span style="color:#f4cca4"><b>Omar Reda</b></span> 2021 &
                             All Rights Reserved.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 text-right">
+                    <div class="col-12 col-6 text-right">
                         <a href="#"><img src="{% static 'img/footer/payment.png' %}" alt="" /></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- footer-bottom area end -->
     </footer>
-    <!-- footer section end -->
 
     <!-- all js here -->
-    <!-- jquery latest version -->
-    <script src="{% static 'js/vendor/jquery-1.12.3.min.js' %}"></script>
-    <!-- bootstrap js -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <!-- owl.carousel js -->
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <!-- meanmenu js -->
-    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
-    <!-- countdown JS -->
-    <script src="{% static 'js/countdown.js' %}"></script>
-    <!-- nivo.slider JS -->
-    <script src="{% static 'js/jquery.nivo.slider.pack.js' %}"></script>
-    <!-- simpleLens JS -->
-    <script src="{% static 'js/jquery.simpleLens.min.js' %}"></script>
-    <!-- jquery-ui js -->
-    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
-    <!-- load-more js -->
-    <script src="{% static 'js/load-more.js' %}"></script>
-    <!-- plugins js -->
-    <script src="{% static 'js/plugins.js' %}"></script>
-    <!-- main js -->
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <script src="{% static 'js/countdown.js' %}"></script>
+    <script src="{% static 'js/jquery.simpleLens.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/load-more.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
     <script>
         $(document).ready(function(){
             $('.thumb a').click(function(e){
@@ -303,5 +229,4 @@
         })
     </script>
 </body>
-
 </html>
