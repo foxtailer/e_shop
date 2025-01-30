@@ -418,6 +418,7 @@
 				</div>
 			</div>
 		</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper(".mySwiper", {
@@ -429,8 +430,10 @@
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
 			},
-			mousewheel: {
-				forceToAxis: true,
+			loop: true, 
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
 			},
 		});
 	</script>
