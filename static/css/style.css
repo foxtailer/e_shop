@@ -12,7 +12,7 @@
     CSS INDEX
     ===================
 	
-    [ 1. theme default CSS ] (body, link color, section etc)
+    [ 1. tehme default CSS ] (body, link color, section etc)
 	[ 2. home version one ]
 	[ 3. home version two ]
 	[ 4. about page ]
@@ -191,7 +191,6 @@ input:focus, textarea:focus {outline: 0px;}
 }
 .header-one .right ul li ul ,.middel-top ul.right li ul{
 	background: #40394a none repeat scroll 0 0;
-	left: 0;
 	opacity: 0;
 	padding: 8px;
 	position: absolute;
